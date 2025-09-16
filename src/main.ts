@@ -88,5 +88,5 @@ function populateUI(profile: any) {
   document.getElementById("uri")!.setAttribute("href", profile.external_urls.spotify);
   document.getElementById("url")!.innerText = profile.href;
   document.getElementById("url")!.setAttribute("href", profile.href);
-  document.getElementById("imgUrl")!.innerText = profile.images[0].url;
+  document.getElementById("imgUrl")!.innerHTML = '<img src="'+profile.images[0].url+'"></img>';
 }
